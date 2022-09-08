@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Primary Colors
+ */
+
+.hero-section {
+  background: url("./Hero.jpg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7rem 2rem 7rem;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.nav-item {
+  border: 1px solid #395b64;
+  color: #eeeeee;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.nav-item:hover,
+.nav-item:active {
+  background-color: #222831;
+  color: #00adb5;
+
+  border-radius: 20px;
+  cursor: pointer;
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 7rem 2rem 7rem;
+}
+.hero-img {
+  height: 55vh;
+}
+.hero-text {
+  color: #00adb5;
+}
+.hero-title {
+  font-size: 3.6rem;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  line-height: 0.9;
+}
+.hero-btn {
+  padding: 15px 30px;
+  background-color: #eeeeee00;
+  border: 3px solid #395b64;
+  color: #eeeeee;
+  border-radius: 50px;
+  margin-top: 1.5rem;
+}
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: #222831;
+  color: #00adb5;
+  cursor: pointer;
+}
