@@ -1,13 +1,14 @@
 import React from "react";
 import heroImg from "../hero-image.svg";
-import heroimage from "../hero-img.png";
+import logo from "../logo.png";
 
 const TopNav = () => {
   return (
     <div className="main-container">
       <div className="hero-section">
         <header className="top-nav">
-          <div className="logo">logo</div>
+          <img className="logo" src={logo} alt="logo-img" />
+          {/* <div className="logo">logo</div> */}
           <ul className="nav-list">
             <li className="nav-item">Home</li>
             <li className="nav-item">Services</li>
