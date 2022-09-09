@@ -1,6 +1,7 @@
 import React from "react";
 import heroImg from "../hero-image.svg";
 import logo from "../logo.png";
+import naviIcon from "../assets/nav-icon.png";
 
 const TopNav = () => {
   return (
@@ -16,6 +17,10 @@ const TopNav = () => {
             <li className="nav-item">Projects</li>
             <li className="nav-item">Contact us</li>
           </ul>
+          <div className="nav-icon">
+            {" "}
+            <img src={naviIcon} />{" "}
+          </div>
         </header>
         <div className="hero">
           <div className="hero-text">
