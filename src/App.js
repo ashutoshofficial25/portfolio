@@ -1,14 +1,15 @@
 import React from "react";
 import "./App.css";
 import "./style.css";
-import TopNav from "./components/TopNav";
-import Services from "./components/Services";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Homepage from "./pages/homepage";
 
 function App() {
   return (
     <div>
-      <TopNav />
-      <Services />
+      <Homepage />
     </div>
   );
 }
