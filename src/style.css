@@ -60,7 +60,7 @@
   height: 55vh;
 }
 .hero-text {
-  color: #00adb5;
+  color: #eeeeee;
 }
 .hero-title {
   font-size: 3.6rem;
@@ -316,6 +316,14 @@
     max-width: 250px;
     grid-column: 1;
   }
+}
+
+.contact-container {
+  background: url("./assets/contactus.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
 .slick-next {

@@ -3,6 +3,7 @@ import TopNav from "../components/TopNav";
 import Services from "../components/Services";
 import Tools from "../components/Tools";
 import AboutMe from "../components/AboutMe";
+import ContactUs from "../components/ContactUs";
 const Homepage = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Homepage = () => {
       <Tools />
       <Services />
       <AboutMe />
+      <ContactUs />
     </div>
   );
 };
