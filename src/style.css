@@ -134,6 +134,25 @@
   font-weight: 500;
   line-height: 0.9;
 }
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-group {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
+  }
+}
 
 .service-card {
   display: flex;
@@ -147,9 +166,7 @@
   max-width: 300px !important;
   margin: 0 auto;
 }
-.card-group {
-  display: flex;
-}
+
 .img-1 {
   max-width: 220px;
   margin: 0 auto;
