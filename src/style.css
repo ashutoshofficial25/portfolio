@@ -132,8 +132,20 @@
   .hero-btn {
     padding: 8px 16px;
   }
+
   .hero {
-    padding: 12rem 2rem 2rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 7rem 2rem 7rem;
+  }
+  .hero-img {
+    display: block;
+    height: 30vh;
+    width: auto;
+    grid-row: 1;
   }
 }
 
