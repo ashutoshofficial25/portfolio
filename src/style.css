@@ -39,43 +39,9 @@
   border-radius: 20px;
   cursor: pointer;
 }
-.nav-icon {
+.nav-option-icon {
   display: none;
 }
-@media only screen and (max-width: 600px) {
-  .top-nav {
-    padding: 1rem 4rem 1rem 4rem;
-  }
-  .nav-list {
-    display: none;
-  }
-  .nav-icon {
-    display: block;
-  }
-  .nav-icon img {
-    height: 2.2rem;
-    width: auto;
-    cursor: pointer;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  .top-nav {
-    padding: 1rem 4rem 1rem 4rem;
-  }
-  .nav-list {
-    display: none;
-  }
-  .nav-icon {
-    display: block;
-  }
-  .nav-icon img {
-    height: 2.5rem;
-    width: auto;
-    cursor: pointer;
-  }
-}
-
 .nav-item:hover,
 .nav-item:active {
   background-color: #222831;
@@ -117,6 +83,60 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 920px) {
+  .top-nav {
+    padding: 1rem 4rem 1rem 4rem;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-option-icon {
+    display: block;
+  }
+  .nav-option-icon img {
+    height: 2.5rem;
+    width: auto;
+    cursor: pointer;
+  }
+  .hero-img {
+    display: none;
+  }
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .hero-btn {
+    padding: 12px 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .top-nav {
+    padding: 1rem 4rem 1rem 4rem;
+  }
+  .nav-list {
+    display: none;
+  }
+  .nav-option-icon {
+    display: block;
+  }
+  .nav-option-icon img {
+    height: 2.2rem;
+    width: auto;
+    cursor: pointer;
+  }
+  .hero-title {
+    font-size: 2rem;
+    line-height: 0.9;
+  }
+  .hero-btn {
+    padding: 8px 16px;
+  }
+  .hero {
+    padding: 12rem 2rem 2rem 2rem;
+  }
+}
+
 .our-services {
   background: url("./service-img.png");
   background-repeat: no-repeat;
@@ -129,9 +149,9 @@
   color: #393e46;
   padding: 3rem;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Varela Round", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 0.9;
 }
 .card-group {
@@ -146,11 +166,22 @@
     gap: 3rem;
     padding: 2rem;
   }
+  .service-head {
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    padding: 2rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .card-group {
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem;
+  }
+  .service-head {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1.5rem;
   }
 }
 

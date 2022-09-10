@@ -17,7 +17,7 @@ const TopNav = () => {
             <li className="nav-item">Projects</li>
             <li className="nav-item">Contact us</li>
           </ul>
-          <div className="nav-icon">
+          <div className="nav-option-icon">
             {" "}
             <img src={naviIcon} />{" "}
           </div>

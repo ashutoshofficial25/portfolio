@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="our-services">
       <div className="service-head">
-        <h2>Our Services</h2>
+        <p>Our Services</p>
       </div>
       <div className="card-group">
         <div className="service-card">
