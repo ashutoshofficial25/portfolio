@@ -68,6 +68,10 @@
   font-weight: 500;
   line-height: 0.9;
 }
+
+.hero-description {
+  margin-top: 1rem;
+}
 .hero-btn {
   padding: 15px 30px;
   background-color: #eeeeee00;
@@ -139,13 +143,15 @@
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    padding: 6rem 7rem 2rem 7rem;
+    padding: 8rem 7rem 2rem 7rem;
   }
   .hero-img {
     display: block;
     height: 30vh;
     width: auto;
     grid-row: 1;
+  }
+  .hero-description {
   }
 }
 

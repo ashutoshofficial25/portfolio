@@ -24,9 +24,14 @@ const TopNav = () => {
         </header>
         <div className="hero">
           <div className="hero-text">
-            <h2 className="hero-title">I’m a creative web developer . . .</h2>
+            <h2 className="hero-title">I’m a creative web developer </h2>
             <p>Commited to People, Commited to the Future.</p>
-
+            <p className="hero-description">
+              I'm a web developer with a focus on the MERN stack, but still
+              exploring other technologies and frameworks that catch my
+              interest! if you're looking for a developer to add to your team,
+              I'd love to hear from you!
+            </p>
             <button className="hero-btn">View my work</button>
           </div>
 
