@@ -270,3 +270,50 @@
   height: 5rem;
   width: auto;
 }
+
+.about-me-container {
+  background: url("./assets/bg-aboutme.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-me-head {
+  font-size: 1.6rem;
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 50px;
+  font-weight: 500;
+}
+.about-me-card {
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 30%);
+  padding: 30px 30px 30px 30px;
+  background: #ffffff;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.my-image-p {
+  max-width: 400px;
+}
+.my-description {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .about-me-card {
+    display: grid;
+  }
+  .my-image-p {
+    max-width: 250px;
+    grid-column: 1;
+  }
+}
