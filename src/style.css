@@ -317,3 +317,7 @@
     grid-column: 1;
   }
 }
+
+.slick-next {
+  display: none !important;
+}
