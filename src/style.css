@@ -17,9 +17,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 7rem 2rem 7rem;
+  padding: 1rem 7rem 1rem 7rem;
   position: fixed;
   width: 100%;
+  background-color: #222831;
   /* top: 0; */
 }
 .nav-list {
@@ -89,7 +90,7 @@
 
 @media only screen and (max-width: 920px) {
   .top-nav {
-    padding: 1rem 4rem 1rem 4rem;
+    padding: 0.3rem 3rem 0.3rem 3rem;
   }
   .nav-list {
     display: none;
@@ -116,7 +117,7 @@
 
 @media only screen and (max-width: 600px) {
   .top-nav {
-    padding: 1rem 4rem 1rem 4rem;
+    padding: 0.3rem 3rem 0.3rem 3rem;
   }
   .nav-list {
     display: none;
@@ -300,6 +301,11 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+.my-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .my-image-p {
   max-width: 400px;
 }
@@ -311,10 +317,16 @@
 @media only screen and (max-width: 600px) {
   .about-me-card {
     display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 380px;
+  }
+  .my-description {
+    /* grid-column: 1/-1; */
   }
   .my-image-p {
     max-width: 250px;
-    grid-column: 1;
+
+    /* grid-row: -1/2; */
   }
 }
 
@@ -324,6 +336,17 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+}
+
+.footer {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #eeeeee, #393e46);
+}
+.footer-text {
+  text-align: center;
 }
 
 .slick-next {

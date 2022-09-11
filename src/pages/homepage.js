@@ -4,6 +4,7 @@ import Services from "../components/Services";
 import Tools from "../components/Tools";
 import AboutMe from "../components/AboutMe";
 import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
 const Homepage = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Services />
       <AboutMe />
       <ContactUs />
+      <Footer />
     </div>
   );
 };
