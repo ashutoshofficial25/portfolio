@@ -7,7 +7,7 @@
  */
 
 .hero-section {
-  background: url("./Hero.jpg");
+  background: url("./assets/hero-2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -73,6 +73,10 @@
 .hero-description {
   margin-top: 1rem;
 }
+.hero-btn-group {
+  display: flex;
+  gap: 10px;
+}
 .hero-btn {
   padding: 15px 30px;
   background-color: #eeeeee00;
@@ -86,6 +90,22 @@
   background-color: #222831;
   color: #00adb5;
   cursor: pointer;
+}
+.wrk-btn {
+  background-color: #222831;
+  color: #00adb5;
+  cursor: pointer;
+}
+.resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.download-icon {
+  height: 15px;
+  width: auto;
+  color: #eeeeee;
 }
 
 @media only screen and (max-width: 920px) {
