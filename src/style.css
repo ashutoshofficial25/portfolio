@@ -402,6 +402,22 @@
   letter-spacing: 1px;
 }
 
+.form {
+  display: block;
+  padding: 24px;
+  color: #eeeeee;
+}
+.form-input,
+.form-input:active {
+  border: none;
+  border-radius: 15px;
+  height: 36px;
+  margin-bottom: 10px;
+  width: 250px;
+  padding-left: 20px;
+  margin-left: 50px;
+}
+
 .slick-next {
   display: none !important;
 }
