@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "dm sans", Sans-serif;
 }
 /* Primary Colors
  */
@@ -62,16 +63,19 @@
 }
 .hero-text {
   color: #eeeeee;
+  font-family: "dm sans", Sans-serif;
 }
 .hero-title {
   font-size: 3.6rem;
-  font-family: "Varela Round", sans-serif;
+  /* font-family: "Varela Round", sans-serif; */
   font-weight: 500;
-  line-height: 0.9;
+  line-height: 1;
 }
 
 .hero-description {
   margin-top: 1rem;
+  letter-spacing: 2px;
+  font-size: 18px;
 }
 .hero-btn-group {
   display: flex;
@@ -176,6 +180,48 @@
   }
 }
 
+/* Tools Section */
+.tool-container {
+  background: linear-gradient(
+    90deg,
+    rgba(44, 51, 51, 0.479) 26%,
+    rgba(57, 91, 100, 1) 57%
+  );
+  height: 10rem;
+  text-align: center;
+}
+.tool-test {
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+}
+
+.tool-img {
+  height: 5rem;
+  width: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .tool-container {
+    height: 6rem;
+    text-align: center;
+  }
+  .tool-test {
+    padding: 0.2rem;
+    font-size: 1rem;
+    /* font-family: "Varela Round", sans-serif; */
+    font-weight: 600;
+  }
+
+  .tool-img {
+    height: 2.5rem;
+    width: auto;
+  }
+}
+
+/* Service- Section */
+
 .our-services {
   background: url("./service-img.png");
   background-repeat: no-repeat;
@@ -271,27 +317,6 @@
   border-radius: 20px;
 }
 
-.tool-container {
-  background: linear-gradient(
-    90deg,
-    rgba(57, 91, 100, 1) 26%,
-    rgba(44, 51, 51, 0.479) 57%
-  );
-  height: 10rem;
-  text-align: center;
-}
-.tool-test {
-  padding: 0.5rem;
-  font-size: 1.6rem;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 600;
-}
-
-.tool-img {
-  height: 5rem;
-  width: auto;
-}
-
 .about-me-container {
   background: url("./assets/bg-aboutme.png");
   background-repeat: no-repeat;
@@ -333,6 +358,11 @@
   display: flex;
   align-items: center;
   padding: 10px;
+  font-family: "dm sans", Sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 500;
 }
 @media only screen and (max-width: 600px) {
   .about-me-card {
@@ -359,6 +389,8 @@
 }
 
 .footer {
+  letter-spacing: 2px;
+  font-size: 18px;
   min-height: 100px;
   display: flex;
   align-items: center;
@@ -367,6 +399,7 @@
 }
 .footer-text {
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .slick-next {

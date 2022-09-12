@@ -26,7 +26,7 @@ const TopNav = () => {
         <div className="hero">
           <div className="hero-text">
             <h2 className="hero-title">I’m a creative web developer </h2>
-            <p>Commited to People, Commited to the Future.</p>
+            <p> </p>
             <p className="hero-description">
               I'm a web developer with a focus on the MERN stack, but still
               exploring other technologies and frameworks that catch my

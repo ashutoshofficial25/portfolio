@@ -8,12 +8,12 @@ const AboutMe = () => {
         <div className="my-image">
           <img className="my-image-p" src={myProfile} />
         </div>
-        <div className="my-description">
+        <p className="my-description">
           I'm a web developer with a focus on the MERN stack, but still
           exploring other technologies and frameworks that catch my interest! if
           you're looking for a developer to add to your team, I'd love to hear
           from you!
-        </div>
+        </p>
       </div>
     </div>
   );
