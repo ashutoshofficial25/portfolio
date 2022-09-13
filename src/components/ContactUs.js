@@ -5,7 +5,7 @@ const ContactUs = () => {
   const handleSubmit = () => {};
 
   return (
-    <div className="contact-container">
+    <div id="contact-me" className="contact-container">
       <Container fluid="md">
         <Row>
           <Col md={5} className="p-5">

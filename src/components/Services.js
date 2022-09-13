@@ -4,7 +4,7 @@ import webImg from "../web-app.svg";
 
 const Services = () => {
   return (
-    <div className="our-services">
+    <div id="services" className="our-services">
       <div className="service-head">
         <p>Our Services</p>
       </div>

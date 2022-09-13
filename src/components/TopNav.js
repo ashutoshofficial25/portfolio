@@ -21,21 +21,21 @@ const TopNav = () => {
           </ul>
           <div className="nav-option-icon">
             <NavDropdown
-              id="nav-dropdown-dark-example"
+              id="nav-dropdown"
               title={<img src={naviIcon} />}
               menuVariant="dark"
             >
-              <NavDropdown.Item href="#action/3.1">Home</NavDropdown.Item>
+              <NavDropdown.Item href="#hero">Home</NavDropdown.Item>
 
-              <NavDropdown.Item href="#action/3.3">Services</NavDropdown.Item>
+              <NavDropdown.Item href="#services">Services</NavDropdown.Item>
 
-              <NavDropdown.Item href="#action/3.4">About me</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Projects</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4">Contact me</NavDropdown.Item>
+              <NavDropdown.Item href="#about-me">About me</NavDropdown.Item>
+              <NavDropdown.Item href="#projects">Projects</NavDropdown.Item>
+              <NavDropdown.Item href="#contact-me">Contact me</NavDropdown.Item>
             </NavDropdown>
           </div>
         </header>
-        <div className="hero">
+        <div id="hero" className="hero">
           <div className="hero-text">
             <h2 className="hero-title">I’m a creative web developer </h2>
             <p> </p>

@@ -2,7 +2,7 @@ import React from "react";
 import myProfile from "../assets/my-profile.svg";
 const AboutMe = () => {
   return (
-    <div className="about-me-container">
+    <div id="about-me" className="about-me-container">
       <p className="about-me-head"> About Me</p>
       <div className="about-me-card">
         <div className="my-image">
