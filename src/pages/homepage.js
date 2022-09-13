@@ -1,21 +1,19 @@
 import React from "react";
-import TopNav from "../components/TopNav";
 import Services from "../components/Services";
 import Tools from "../components/Tools";
 import AboutMe from "../components/AboutMe";
 import ContactUs from "../components/ContactUs";
-import Footer from "../components/Footer";
 import Projects from "../components/Projects";
+import Hero from "../components/Hero";
 const Homepage = () => {
   return (
     <div>
-      <TopNav />
+      <Hero />
       <Tools />
       <Services />
       <AboutMe />
       <Projects />
       <ContactUs />
-      <Footer />
     </div>
   );
 };

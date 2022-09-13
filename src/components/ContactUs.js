@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { Button, Col, Container, Form, FormGroup, Row } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
   const [validated, setValidated] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    } else {
+      navigate("/thankyou");
     }
 
     setValidated(true);

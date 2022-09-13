@@ -412,3 +412,11 @@
 .project-section {
   height: 100vh;
 }
+
+.thankyou-page {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
