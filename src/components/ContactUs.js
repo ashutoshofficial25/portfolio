@@ -15,7 +15,7 @@ const ContactUs = () => {
           <Col md={{ span: 5, offset: 2 }} className="p-5">
             <p className="text-center">Contact me</p>
 
-            <Form>
+            <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Your Name</Form.Label>
 

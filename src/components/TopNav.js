@@ -3,6 +3,7 @@ import heroImg from "../hero-image.svg";
 import logo from "../logo.png";
 import naviIcon from "../assets/nav-icon.png";
 import downloadIcon from "../assets/direct-download.png";
+import { Dropdown, NavDropdown } from "react-bootstrap";
 
 const TopNav = () => {
   return (
@@ -14,13 +15,24 @@ const TopNav = () => {
           <ul className="nav-list">
             <li className="nav-item">Home</li>
             <li className="nav-item">Services</li>
-            <li className="nav-item">About us</li>
+            <li className="nav-item">About me</li>
             <li className="nav-item">Projects</li>
-            <li className="nav-item">Contact us</li>
+            <li className="nav-item">Contact me</li>
           </ul>
           <div className="nav-option-icon">
-            {" "}
-            <img src={naviIcon} />{" "}
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title={<img src={naviIcon} />}
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="#action/3.1">Home</NavDropdown.Item>
+
+              <NavDropdown.Item href="#action/3.3">Services</NavDropdown.Item>
+
+              <NavDropdown.Item href="#action/3.4">About me</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Projects</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.4">Contact me</NavDropdown.Item>
+            </NavDropdown>
           </div>
         </header>
         <div className="hero">
