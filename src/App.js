@@ -8,15 +8,15 @@ import Homepage from "./pages/homepage";
 import TopNav from "./components/TopNav";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import ThankyouPage from "./pages/ThankyouPage";
+import ThankyouPage from "./pages/thankyouPage";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <BrowserRouter>
         <TopNav />
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route exact path="/" element={<Homepage />} />
           <Route path="/thankyou" element={<ThankyouPage />} />
         </Routes>
         <Footer />
