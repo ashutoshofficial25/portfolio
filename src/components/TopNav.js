@@ -6,10 +6,25 @@ import downloadIcon from "../assets/direct-download.png";
 import { Dropdown, NavDropdown } from "react-bootstrap";
 
 const TopNav = () => {
+  // window.onscroll = function () {
+  //   myFunction();
+  // };
+
+  // let header = document.getElementById("top-nav");
+  // let sticky = header.offsetTop + 100;
+
+  // function myFunction() {
+  //   if (window.pageYOffset > sticky) {
+  //     header.classList.add("top-nav-bg");
+  //   } else {
+  //     header.classList.remove("top-nav-bg");
+  //   }
+  // }
+
   return (
     <div className="main-container">
       <div className="hero-section">
-        <header className="top-nav">
+        <header className="top-nav top-nav-bg">
           <img className="logo" src={logo} alt="logo-img" />
           {/* <div className="logo">logo</div> */}
           <ul className="nav-list">

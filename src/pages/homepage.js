@@ -5,6 +5,7 @@ import Tools from "../components/Tools";
 import AboutMe from "../components/AboutMe";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
+import Projects from "../components/Projects";
 const Homepage = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Homepage = () => {
       <Tools />
       <Services />
       <AboutMe />
+      <Projects />
       <ContactUs />
       <Footer />
     </div>
