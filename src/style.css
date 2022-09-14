@@ -109,6 +109,14 @@
   align-items: center;
   padding: 10px 20px;
 }
+
+.cv-link,
+.cv-link:active,
+.cv-link:hover {
+  text-decoration: none;
+  color: #00adb5;
+}
+
 .download-icon {
   height: 15px;
   width: auto;

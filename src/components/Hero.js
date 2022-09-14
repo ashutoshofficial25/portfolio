@@ -34,14 +34,20 @@ const Hero = () => {
             </p>
             <div className="hero-btn-group">
               <button className="hero-btn resume">
-                {" "}
-                <img
-                  className="download-icon"
-                  src={downloadIcon}
-                  alt="download-icon"
-                />{" "}
-                &nbsp; My CV
+                <a
+                  className="cv-link"
+                  href="https://drive.google.com/file/d/1rc0v-7IUoB8Lg4bso2JNZheawLcwwTGw/view?usp=sharing"
+                  target="_balnk"
+                >
+                  <img
+                    className="download-icon"
+                    src={downloadIcon}
+                    alt="download-icon"
+                  />{" "}
+                  &nbsp; My CV
+                </a>
               </button>
+
               <button className="hero-btn wrk-btn">View my work</button>
             </div>
           </div>
