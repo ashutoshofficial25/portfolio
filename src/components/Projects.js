@@ -48,7 +48,7 @@ const Projects = () => {
 
           <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
             <h4 className="projectTitle">
-              Project Name <span>some. some.</span>
+              Todo-App <span>(Next-js)</span>
             </h4>
             <a href="https://todowebapp.vercel.app/" target="_blank">
               <div className="cardProject">
