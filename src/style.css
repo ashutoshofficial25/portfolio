@@ -34,6 +34,18 @@
   justify-content: center;
   gap: 40px;
 }
+
+.nav-list-hidden {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+  width: max-content;
+  padding-left: 0;
+  margin: auto;
+}
+
 .logo {
   height: 60px;
 }
