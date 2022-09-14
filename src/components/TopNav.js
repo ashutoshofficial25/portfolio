@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "../logo.png";
 import naviIcon from "../assets/nav-icon.png";
-import { Dropdown, NavDropdown, Offcanvas } from "react-bootstrap";
+import { Offcanvas } from "react-bootstrap";
 
 const TopNav = () => {
   const [show, setShow] = useState(false);

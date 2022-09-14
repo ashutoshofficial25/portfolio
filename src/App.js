@@ -9,6 +9,7 @@ import TopNav from "./components/TopNav";
 import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ThankyouPage from "./pages/thankyouPage";
+import ErrorPage from "./pages/404";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/thankyou" element={<ThankyouPage />} />
+          <Route path="/*" element={<ErrorPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
