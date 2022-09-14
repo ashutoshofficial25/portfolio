@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { Button, Col, Container, Form, FormGroup, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
+import instaIcon from "../assets/socials/insta.png";
+import twitterIcon from "../assets/socials/twitter.png";
+import linkedInIcon from "../assets/socials/linkedin.png";
+import gitIcon from "../assets/socials/git.png";
+
 const ContactUs = () => {
   const [validated, setValidated] = useState(false);
   const navigate = useNavigate();
@@ -22,9 +27,76 @@ const ContactUs = () => {
     <div id="contact-me" className="contact-container">
       <Container fluid="md">
         <Row>
-          <Col md={5} className="p-5">
-            <p className="text-center">Get in touch</p>
-            <h2 className="text-center">Available Soon. . .</h2>
+          <Col md={5} className="p-5 mt-3">
+            <p className="text-center fs-3 mb-5">Get In Touch</p>
+
+            <p className="fs-5">
+              {" "}
+              Use this information to contact us or to Visit us.
+            </p>
+
+            <p>
+              {" "}
+              <a
+                href="https://ashutosh-maurya.netlify.app/"
+                className="site-link"
+              >
+                {" "}
+                ashutosh-maurya.netlify.app
+              </a>
+              <br />
+              Indira-Nagar Lucknow,
+              <br />
+              Uttar Pradesh India 226016.
+            </p>
+
+            <p>
+              Email: - ashutohsm9695@gmail.com
+              <br />
+              Phone: - +91-9695734655
+            </p>
+
+            <p>
+              {" "}
+              Follow us on social media to get updates about our new Projects
+              and Designs : -
+            </p>
+
+            <div className="social-links p-3">
+              <a href="https://github.com/ashutoshofficial25/" target="_blank">
+                <img src={gitIcon} className="social-icon git" alt="git" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ashutosh-maurya-a996931a5"
+                target="_blank"
+              >
+                <img
+                  src={linkedInIcon}
+                  className="social-icon linkedin"
+                  alt="linkedIn"
+                />
+              </a>
+              <a
+                href="https://twitter.com/Ashutos80172936?t=imEBNXgLafp3oT7i864dEg&s=09"
+                target="_blank"
+              >
+                <img
+                  src={twitterIcon}
+                  className="social-icon twitter"
+                  alt="twitter"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/ashutosh_official_25/?hl=en"
+                target="_blank"
+              >
+                <img
+                  src={instaIcon}
+                  className="social-icon insta"
+                  alt="insta"
+                />
+              </a>
+            </div>
           </Col>
           <Col md={{ span: 5, offset: 2 }} className="p-5">
             <p className="text-center">Contact me</p>
