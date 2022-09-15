@@ -21,7 +21,7 @@
   padding: 1rem 7rem 1rem 7rem;
   position: fixed;
   width: 100%;
-
+  z-index: 1;
   /* top: 0; */
 }
 .top-nav-bg {
@@ -75,7 +75,26 @@
 }
 .hero-img {
   height: 55vh;
+  /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+  transform: translatey(0px);
+  z-index: 0;
+  animation: float 4s ease-in-out infinite;
 }
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(10px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-30px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(10px);
+  }
+}
+
 .hero-text {
   color: #eeeeee;
   font-family: "dm sans", Sans-serif;
@@ -418,8 +437,12 @@
 .social-icon {
   height: 34px;
   width: auto;
+  transition: ease-in-out 500ms;
 }
-
+.social-icon:hover {
+  height: 37px;
+  transform: skew(2);
+}
 .footer {
   letter-spacing: 2px;
   font-size: 18px;
@@ -435,10 +458,12 @@
   letter-spacing: 1px;
 }
 
+/* Slick-Carousel CSS */
 .slick-next {
   display: none !important;
 }
 
+/* Project Section CSS */
 .project-section {
   height: fit-content;
 }
@@ -453,7 +478,14 @@
   text-decoration: none;
   color: #222831;
 }
-
+.cardProject {
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.2);
+  transition: ease-in-out;
+  width: auto;
+}
+.cardProject img:hover {
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+}
 .thankyou-page {
   height: 90vh;
   display: flex;

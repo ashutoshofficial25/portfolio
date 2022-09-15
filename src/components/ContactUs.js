@@ -101,10 +101,20 @@ const ContactUs = () => {
           <Col md={{ span: 5, offset: 2 }} className="p-5">
             <p className="text-center">Contact me</p>
 
-            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+            <Form
+              noValidate
+              validated={validated}
+              action="https://formsubmit.co/carrierleiten@gmail.com"
+              method="POST"
+            >
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Your Name</Form.Label>
-                <Form.Control type="text" placeholder="Enter Name" required />
+                <Form.Control
+                  type="text"
+                  name="name"
+                  placeholder="Enter Name"
+                  required
+                />
 
                 <Form.Control.Feedback type="invalid">
                   Please enter your name
@@ -113,7 +123,12 @@ const ContactUs = () => {
 
               <Form.Group className="mb-3">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" required />
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder="Enter email"
+                  required
+                />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
@@ -127,6 +142,7 @@ const ContactUs = () => {
                 <Form.Label>Mobile number</Form.Label>
                 <Form.Control
                   type="number"
+                  name="mobile-Number"
                   placeholder="Enter mobile number"
                   required
                 />
@@ -143,7 +159,7 @@ const ContactUs = () => {
                 <Form.Label>Your Message</Form.Label>
                 <Form.Control
                   type="text"
-                  name="text"
+                  name="message"
                   as="textarea"
                   rows={6}
                   placeholder="Enter your message"
