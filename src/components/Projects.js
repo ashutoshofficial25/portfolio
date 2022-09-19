@@ -15,7 +15,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="project-section bg-secondary" id="projects">
+    <div className="project-section " id="projects">
       <Container fluid>
         <h1 className="text-center text-light p-3">Project Gallery </h1>
 
