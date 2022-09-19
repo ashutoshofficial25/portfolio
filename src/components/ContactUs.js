@@ -104,8 +104,9 @@ const ContactUs = () => {
             <Form
               noValidate
               validated={validated}
-              action="https://formsubmit.co/carrierleiten@gmail.com"
-              method="POST"
+              onSubmit={handleSubmit}
+              // action="https://formsubmit.co/carrierleiten@gmail.com"
+              // method="POST"
             >
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Your Name</Form.Label>
