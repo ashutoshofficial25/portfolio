@@ -244,7 +244,7 @@ button a {
 
 /* Tools Section */
 .tool-container {
-  background: linear-gradient(to right, #e94560e8, #543483e1);
+  /* background: linear-gradient(to right, #e94560e8, #543483e1); */
   height: 10rem;
   text-align: center;
 }
