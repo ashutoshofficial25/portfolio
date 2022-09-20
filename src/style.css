@@ -443,9 +443,12 @@ button a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  font-weight: 500;
   min-height: 100vh;
 }
-
+.address {
+  color: #eeeeee;
+}
 .social-links {
   display: flex;
   gap: 20px;
@@ -459,7 +462,15 @@ button a {
   height: 37px;
   transform: skew(2);
 }
+
+@media only screen and (max-width: 600px) {
+  .address {
+    color: #e94560;
+  }
+}
+
 .footer {
+  color: #eeeeee;
   letter-spacing: 2px;
   font-size: 18px;
   min-height: 100px;
@@ -472,6 +483,15 @@ button a {
 .footer-text {
   text-align: center;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer-text {
+    letter-spacing: 0.2px;
+  }
 }
 
 /* Slick-Carousel CSS */

@@ -27,7 +27,7 @@ const ContactUs = () => {
     <div id="contact-me" className="contact-container">
       <Container fluid="md">
         <Row>
-          <Col md={5} className="p-5 mt-3">
+          <Col md={5} className=" address p-5 mt-3">
             <p className="text-center fs-3 mb-5">Get In Touch</p>
 
             <p className="fs-5">
@@ -171,7 +171,7 @@ const ContactUs = () => {
                 </Form.Control.Feedback>
               </Form.Group>
 
-              <Button variant="primary" type="submit">
+              <Button variant="danger" className="w-100" type="submit">
                 Submit
               </Button>
             </Form>
