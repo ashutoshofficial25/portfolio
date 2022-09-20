@@ -20,7 +20,7 @@ const Hero = () => {
   // }
 
   return (
-    <div className="main-container">
+    <div id="home" className="main-container">
       <div className="hero-section">
         <div id="hero" className="hero">
           <div className="hero-text">
@@ -48,7 +48,10 @@ const Hero = () => {
                 </a>
               </button>
 
-              <button className="hero-btn wrk-btn">View my work</button>
+              <button className="hero-btn wrk-btn">
+                {" "}
+                <a href="#projects"> View my work</a>
+              </button>
             </div>
           </div>
 

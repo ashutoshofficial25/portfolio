@@ -25,7 +25,7 @@
   /* top: 0; */
 }
 .top-nav-bg {
-  background-color: #0f3360a0;
+  background-color: #600f45;
 }
 .nav-list {
   list-style: none;
@@ -33,6 +33,12 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+}
+
+li a,
+li a:visited {
+  text-decoration: none;
+  color: #eeeeee;
 }
 
 .nav-list-hidden {
@@ -61,11 +67,19 @@
 }
 .nav-item:hover,
 .nav-item:active {
-  background-color: #222831;
+  background-color: #533483;
   color: #00adb5;
-
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transition: ease-in-out 600ms;
+  animation: blink 2000ms;
   border-radius: 20px;
   cursor: pointer;
+}
+
+@keyframes blink {
+  0% {
+    background-color: #e94560;
+  }
 }
 .hero {
   display: flex;
@@ -123,12 +137,18 @@
   border-radius: 50px;
   margin-top: 1.5rem;
 }
+
+button a {
+  text-decoration: none;
+  color: #eeeeee;
+}
 .hero-btn:hover,
 .hero-btn:active {
   background-color: #222831;
   color: #00adb5;
   cursor: pointer;
 }
+
 .wrk-btn {
   background-color: #222831;
   color: #00adb5;
