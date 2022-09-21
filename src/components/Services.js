@@ -1,7 +1,7 @@
 import React from "react";
 
 //Asset Imports
-import webImg from "../web-app.svg";
+import webImg from "../assets/services/web.svg";
 
 const Services = () => {
   return (

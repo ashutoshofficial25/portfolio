@@ -1,7 +1,6 @@
 import React from "react";
 
 //assets Import
-import myProfile from "../assets/my-profile.svg";
 import ashutosh from "../assets/Ashutosh.jpg";
 
 const AboutMe = () => {
