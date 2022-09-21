@@ -1,25 +1,11 @@
 import React from "react";
-import heroImg from "../hero-image.svg";
 
+//assets Import
+import heroImg from "../hero-image.svg";
 import downloadIcon from "../assets/direct-download.png";
 import resume from "../assets/Resume/Resume-Ashutosh-Maurya .pdf";
 
 const Hero = () => {
-  // window.onscroll = function () {
-  //   myFunction();
-  // };
-
-  // let header = document.getElementById("top-nav");
-  // let sticky = header.offsetTop + 100;
-
-  // function myFunction() {
-  //   if (window.pageYOffset > sticky) {
-  //     header.classList.add("top-nav-bg");
-  //   } else {
-  //     header.classList.remove("top-nav-bg");
-  //   }
-  // }
-
   return (
     <div id="home" className="main-container">
       <div className="hero-section">
@@ -35,11 +21,7 @@ const Hero = () => {
             </p>
             <div className="hero-btn-group">
               <button className="hero-btn resume">
-                <a
-                  href={resume}
-                  // target="_balnk"
-                  download
-                >
+                <a href={resume} download>
                   <img
                     className="download-icon"
                     src={downloadIcon}

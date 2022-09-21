@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { Button, Col, Container, Form, FormGroup, Row } from "react-bootstrap";
+
+//Packages Import
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
+//assets Import
 import instaIcon from "../assets/socials/insta.png";
 import twitterIcon from "../assets/socials/twitter.png";
 import linkedInIcon from "../assets/socials/linkedin.png";

@@ -1,12 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+
+//Package Import
+import { Offcanvas } from "react-bootstrap";
+
+//Assets Import
 import logo from "../logo.png";
 import naviIcon from "../assets/nav-icon.png";
-import { Offcanvas } from "react-bootstrap";
 
 const TopNav = () => {
   const [show, setShow] = useState(false);
-
   const [colorChange, setColorchange] = useState(false);
+
   const changeNavbarColor = () => {
     if (window.scrollY >= 600) {
       setColorchange(true);
@@ -21,13 +25,11 @@ const TopNav = () => {
 
   return (
     <div>
-      {" "}
       <header
         id="top-nav"
         className={colorChange ? "top-nav top-nav-bg" : "top-nav"}
       >
         <img className="logo" src={logo} alt="logo-img" />
-        {/* <div className="logo">logo</div> */}
         <ul className="nav-list">
           <li className="nav-item">
             <a href="#home"> Home</a>
@@ -58,9 +60,7 @@ const TopNav = () => {
             onHide={handleClose}
             style={{ width: "200px" }}
           >
-            <Offcanvas.Header closeButton>
-              {/*<Offcanvas.Title>Offcanvas</Offcanvas.Title>*/}
-            </Offcanvas.Header>
+            <Offcanvas.Header closeButton></Offcanvas.Header>
             <Offcanvas.Body className="d-flex align-items-center">
               <ul className="nav-list-hidden">
                 <li className="nav-item">

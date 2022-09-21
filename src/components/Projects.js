@@ -1,10 +1,16 @@
 import React from "react";
+
+//Packege Imports
 import { Col, Container, Row } from "react-bootstrap";
+
+//asset Imports
 import estyIndia from "../assets/projects/esty-india.png";
 import visitNewLocation from "../assets/projects/visit-new-location.png";
 import todoApp from "../assets/projects/todo-app.png";
 
 const Projects = () => {
+
+  //to make dynamic
   const cardData = [
     {
       name: "",
