@@ -7,6 +7,10 @@
 /* Primary Colors
  */
 
+ul {
+  margin-bottom: 0;
+}
+
 .hero-section {
   background: url("./assets/hero-bg.png");
   background-repeat: no-repeat;
@@ -218,6 +222,9 @@ button a {
     width: auto;
     cursor: pointer;
   }
+  .nav-option {
+    filter: invert(1);
+  }
   .hero-title {
     font-size: 2rem;
     line-height: 0.9;
@@ -239,8 +246,6 @@ button a {
     height: 30vh;
     width: auto;
     grid-row: 1;
-  }
-  .hero-description {
   }
 }
 
@@ -362,17 +367,16 @@ button a {
 .card-btn {
   margin-top: 1rem;
   text-align: center;
-  border: 1px solid #395b64;
+  border: none;
   color: #eeeeee;
-  background-color: #393e46;
+  background: linear-gradient(to right, #e94560, #533483);
   padding: 5px 10px;
   border-radius: 20px;
   cursor: pointer;
 }
 .card-btn:hover,
 .card-btn:active {
-  background-color: #222831;
-  color: #00adb5;
+  background: linear-gradient(to right, #533483, #e94560);
 
   border-radius: 20px;
 }
@@ -458,11 +462,11 @@ button a {
 .social-icon {
   height: 34px;
   width: auto;
-  transition: ease-in-out 500ms;
+  /* transition: ease-in-out 500ms; */
 }
 .social-icon:hover {
-  height: 37px;
-  transform: skew(2);
+  transition-delay: 100ms;
+  transform: scaleY(1.2);
 }
 
 @media only screen and (max-width: 600px) {

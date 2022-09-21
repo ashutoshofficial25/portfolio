@@ -46,19 +46,22 @@ const TopNav = () => {
           </li>
         </ul>
         <div className="nav-option-icon">
-          <img onClick={handleShow} src={naviIcon} />
+          <img
+            className={colorChange ? "" : "nav-option"}
+            onClick={handleShow}
+            src={naviIcon}
+          />
 
           <Offcanvas
             show={show}
             placement="end"
-            className="bg-dark"
             onHide={handleClose}
-            style={{ width: "170px" }}
+            style={{ width: "200px" }}
           >
             <Offcanvas.Header closeButton>
               {/*<Offcanvas.Title>Offcanvas</Offcanvas.Title>*/}
             </Offcanvas.Header>
-            <Offcanvas.Body>
+            <Offcanvas.Body className="d-flex align-items-center">
               <ul className="nav-list-hidden">
                 <li className="nav-item">
                   <a href="#home"> Home</a>
