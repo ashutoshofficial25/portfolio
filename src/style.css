@@ -544,6 +544,9 @@ button a {
   align-items: center;
   justify-content: center;
 }
+.thankyou-page img {
+  height: 50vh;
+}
 .not-found-container {
   height: 90vh;
 }
