@@ -591,8 +591,8 @@ button a {
   position: relative;
 }
 
-body::before,
-body::after {
+.trasnition-page::before,
+.trasnition-page::after {
   content: "";
   width: 70vmax;
   height: 70vmax;
@@ -607,7 +607,7 @@ body::after {
   pointer-events: none;
 }
 
-body::after {
+.trasnition-page::after {
   width: 70vmin;
   height: 70vmin;
   left: auto;
