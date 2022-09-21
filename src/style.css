@@ -25,7 +25,8 @@
   /* top: 0; */
 }
 .top-nav-bg {
-  background-color: #600f45;
+  background-color: #eeeeee;
+  transition: ease-in-out 500ms;
 }
 .nav-list {
   list-style: none;
@@ -56,8 +57,8 @@ li a:visited {
   height: 60px;
 }
 .nav-item {
-  border: 1px solid #395b64;
   color: #eeeeee;
+  background: linear-gradient(to right, #533483, #e94560);
   padding: 5px 10px;
   border-radius: 20px;
   cursor: pointer;
@@ -67,10 +68,10 @@ li a:visited {
 }
 .nav-item:hover,
 .nav-item:active {
-  background-color: #533483;
+  background: linear-gradient(to right, #e94560, #533483);
   color: #00adb5;
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-  transition: ease-in-out 600ms;
+  transition: ease-in-out;
   animation: blink 2000ms;
   border-radius: 20px;
   cursor: pointer;
@@ -131,8 +132,9 @@ li a:visited {
 }
 .hero-btn {
   padding: 15px 30px;
-  background-color: #eeeeee00;
-  border: 3px solid #395b64;
+  background: linear-gradient(to right, #533483, #e94560);
+  /* border: 3px solid #395b64; */
+  border: none;
   color: #eeeeee;
   border-radius: 50px;
   margin-top: 1.5rem;
@@ -144,28 +146,28 @@ button a {
 }
 .hero-btn:hover,
 .hero-btn:active {
-  background-color: #222831;
-  color: #00adb5;
+  background: linear-gradient(to right, #e94560, #533483);
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
 .wrk-btn {
-  background-color: #222831;
-  color: #00adb5;
   cursor: pointer;
 }
 .resume {
+  background: none;
+  border: 1px solid #533483;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
 
-.cv-link,
-.cv-link:active,
-.cv-link:hover {
+.hero-btn a,
+.hero-btn a:active,
+.hero-btn a:hover {
   text-decoration: none;
-  color: #00adb5;
+  color: #eeeeee;
 }
 
 .download-icon {
@@ -480,6 +482,9 @@ button a {
   background: linear-gradient(to right, #533483, #e94560);
   min-width: 100%;
 }
+.footer p {
+  margin-bottom: 0;
+}
 .footer-text {
   text-align: center;
   letter-spacing: 1px;
@@ -488,6 +493,10 @@ button a {
 @media only screen and (max-width: 600px) {
   .footer {
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70px;
   }
   .footer-text {
     letter-spacing: 0.2px;

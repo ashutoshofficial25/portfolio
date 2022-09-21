@@ -2,6 +2,7 @@ import React from "react";
 import heroImg from "../hero-image.svg";
 
 import downloadIcon from "../assets/direct-download.png";
+import resume from "../assets/Resume/Resume-Ashutosh-Maurya .pdf";
 
 const Hero = () => {
   // window.onscroll = function () {
@@ -35,9 +36,9 @@ const Hero = () => {
             <div className="hero-btn-group">
               <button className="hero-btn resume">
                 <a
-                  className="cv-link"
-                  href="https://drive.google.com/file/d/1rc0v-7IUoB8Lg4bso2JNZheawLcwwTGw/view?usp=sharing"
-                  target="_balnk"
+                  href={resume}
+                  // target="_balnk"
+                  download
                 >
                   <img
                     className="download-icon"
