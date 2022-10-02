@@ -1,6 +1,9 @@
 import React from "react";
+
+//Component Imports
 import { Container } from "react-bootstrap";
 
+//asset Imports
 import notFoundImg from "../assets/not-found/404.svg";
 
 const ErrorPage = () => {

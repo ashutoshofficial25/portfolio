@@ -1,47 +1,83 @@
 import React, { useState } from "react";
+
+//Package Import
+import { Offcanvas } from "react-bootstrap";
+
+//Assets Import
 import logo from "../logo.png";
 import naviIcon from "../assets/nav-icon.png";
-import { Offcanvas } from "react-bootstrap";
 
 const TopNav = () => {
   const [show, setShow] = useState(false);
+  const [colorChange, setColorchange] = useState(false);
+
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 600) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
     <div>
-      {" "}
-      <header className="top-nav top-nav-bg">
+      <header
+        id="top-nav"
+        className={colorChange ? "top-nav top-nav-bg" : "top-nav"}
+      >
         <img className="logo" src={logo} alt="logo-img" />
-        {/* <div className="logo">logo</div> */}
         <ul className="nav-list">
-          <li className="nav-item">Home</li>
-          <li className="nav-item">Services</li>
-          <li className="nav-item">About me</li>
-          <li className="nav-item">Projects</li>
-          <li className="nav-item">Contact me</li>
+          <li className="nav-item">
+            <a href="#home"> Home</a>
+          </li>
+          <li className="nav-item">
+            <a href="#services"> Services</a>
+          </li>
+          <li className="nav-item">
+            <a href="#about-me">About me</a>
+          </li>
+          <li className="nav-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="nav-item">
+            <a href="#contact-me">Contact me</a>
+          </li>
         </ul>
         <div className="nav-option-icon">
-          <img onClick={handleShow} src={naviIcon} />
+          <img
+            className={colorChange ? "" : "nav-option"}
+            onClick={handleShow}
+            src={naviIcon}
+          />
 
           <Offcanvas
             show={show}
             placement="end"
-            className="bg-dark"
             onHide={handleClose}
-            style={{ width: "170px" }}
+            style={{ width: "200px" }}
           >
-            <Offcanvas.Header closeButton>
-              {/*<Offcanvas.Title>Offcanvas</Offcanvas.Title>*/}
-            </Offcanvas.Header>
-            <Offcanvas.Body>
+            <Offcanvas.Header closeButton></Offcanvas.Header>
+            <Offcanvas.Body className="d-flex align-items-center">
               <ul className="nav-list-hidden">
-                <li className="nav-item">Home</li>
-                <li className="nav-item">Services</li>
-                <li className="nav-item">About me</li>
-                <li className="nav-item">Projects</li>
-                <li className="nav-item">Contact me</li>
+                <li className="nav-item">
+                  <a href="#home"> Home</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#services"> Services</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#about-me">About me</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#projects">Projects</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#contact-me">Contact me</a>
+                </li>
               </ul>
             </Offcanvas.Body>
           </Offcanvas>

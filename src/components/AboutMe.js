@@ -1,12 +1,15 @@
 import React from "react";
-import myProfile from "../assets/my-profile.svg";
+
+//assets Import
+import ashutosh from "../assets/Ashutosh.jpg";
+
 const AboutMe = () => {
   return (
     <div id="about-me" className="about-me-container">
       <p className="about-me-head"> About Me</p>
       <div className="about-me-card">
         <div className="my-image">
-          <img className="my-image-p" src={myProfile} />
+          <img className="my-image-p" src={ashutosh} />
         </div>
         <p className="my-description">
           I'm a web developer with a focus on the MERN stack, but still

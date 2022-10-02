@@ -85,7 +85,76 @@ const intersection = (nums1, nums2) => {
 // };
 // console.log(largestNumber(nums));
 
+// fine working .. but at leetcode it's needed to solve in O(n) only
 const kthLargestNumber = (nums, k) => {
+  const sort = (nums) => {
+    for (let i = 0; i < nums.length; i++) {
+      let boolean = false;
+      for (let j = 0; j < nums.length - i; j++) {
+        //previous is greater than next
+        if (nums[j] > nums[j + 1]) {
+          let temp = nums[j];
+          nums[j] = nums[j + 1];
+          nums[j + 1] = temp;
+          boolean = true;
+        }
+      }
+      if (!boolean) return nums;
+    }
+  };
+
+  sort(nums);
+  return nums[nums.length - k];
+};
+
+// console.log(kthLargestNumber([4, 4, 8, 74, 8, 6, 22], 4));
+
+// for positive numbers only
+
+// const squareOfSortedArray = (nums) => {
+//   //bubbleSort
+//   for (let i = 0; i < nums.length; i++) {
+//     let sorted = false;
+//     for (let j = 0; j < nums.length - i; j++) {
+//       if (nums[j] > nums[j + 1]) {
+//         let temp = nums[j];
+//         nums[j] = nums[j + 1];
+//         nums[j + 1] = temp;
+//         sorted = true;
+//       }
+//     }
+//     nums[nums.length - 1 - i] =
+//       nums[nums.length - 1 - i] * nums[nums.length - 1 - i];
+//     if (!sorted) return nums;
+//   }
+// };
+
+// let arrr = [5, 4, 3, 2, 1];
+
+// console.log(squareOfSortedArray(arrr));
+
+const squareOfSortedArray = (nums) => {
+  //bubbleSort
+  nums = nums.map((num) => num * num);
+  for (let i = 0; i < nums.length; i++) {
+    let sorted = false;
+    for (let j = 0; j < nums.length - i; j++) {
+      if (nums[j] > nums[j + 1]) {
+        let temp = nums[j];
+        nums[j] = nums[j + 1];
+        nums[j + 1] = temp;
+        sorted = true;
+      }
+    }
+    if (!sorted) return nums;
+  }
+};
+let arrrr = [-7, -3, 2, 3, 11];
+
+// console.log(squareOfSortedArray(arrrr));
+
+const heights = (nums) => {
+  let count = 0;
   for (let i = 0; i < nums.length; i++) {
     //store the 1st element index : assume as minimim
     let element = i;
@@ -95,6 +164,7 @@ const kthLargestNumber = (nums, k) => {
       //if minimum element than previous found then change the minimum index value
       if (nums[element] > nums[j]) {
         element = j;
+        count++;
       }
     }
 
@@ -103,8 +173,8 @@ const kthLargestNumber = (nums, k) => {
     nums[i] = nums[element];
     nums[element] = temp;
   }
-
-  return nums[nums.length - 1 - k];
+  return console.log(count);
 };
 
-console.log(kthLargestNumber([4, 4, 8, 74, 8, 6, 22], 4));
+let arra = [1, 1, 4, 2, 1, 3];
+heights(arra);
