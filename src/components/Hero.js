@@ -3,7 +3,7 @@ import React from "react";
 //assets Import
 import heroImg from "../assets/hero-image.svg";
 import downloadIcon from "../assets/direct-download.png";
-import resume from "../assets/Resume/Resume-Ashutosh-Maurya .pdf";
+import resume from "../assets/Resume/Resume-Ashutosh-Maurya.pdf";
 
 const Hero = () => {
   return (
