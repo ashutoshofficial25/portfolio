@@ -7,6 +7,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import estyIndia from "../assets/projects/esty-india.png";
 import visitNewLocation from "../assets/projects/visit-new-location.png";
 import todoApp from "../assets/projects/todo-app.png";
+import iconfinder from "../assets/projects/iconfinder.png";
 
 const Projects = () => {
 
@@ -59,6 +60,17 @@ const Projects = () => {
             <a href="https://todowebapp.vercel.app/" target="_blank">
               <div className="cardProject">
                 <img src={todoApp} className="d-block w-100" alt="..." />
+              </div>
+            </a>
+          </Col>
+
+          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+            <h4 className="projectTitle text-light">
+              IconFinder <span>(Clone)</span>
+            </h4>
+            <a href="https://iconfinder-clone.netlify.app/" target="_blank">
+              <div className="cardProject">
+                <img src={iconfinder} className="d-block w-100" alt="..." />
               </div>
             </a>
           </Col>
