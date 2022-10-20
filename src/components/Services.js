@@ -13,7 +13,7 @@ const Services = () => {
         <div className="service-card">
           <img className="img-1" src={webImg} alt="web-app" />
 
-          <div className="card-head">Web Development</div>
+          <div className="card-head">Web App Development</div>
           <p className="card-text">
             We have dedicated team of professional designers and developers,
             creating powerful and engaging websites. We believe that a good
@@ -25,7 +25,7 @@ const Services = () => {
         <div className="service-card">
           <img className="img-1" src={webImg} alt="web-app" />
 
-          <div className="card-head">Web Development</div>
+          <div className="card-head">Website Design/Development</div>
           <p className="card-text">
             We have dedicated team of professional designers and developers,
             creating powerful and engaging websites. We believe that a good
@@ -37,7 +37,7 @@ const Services = () => {
         <div className="service-card">
           <img className="img-1" src={webImg} alt="web-app" />
 
-          <div className="card-head">Web Development</div>
+          <div className="card-head">Responsive Design</div>
           <p className="card-text">
             We have dedicated team of professional designers and developers,
             creating powerful and engaging websites. We believe that a good

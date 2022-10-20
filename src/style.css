@@ -7,6 +7,17 @@
 /* Primary Colors
  */
 
+/* Loading Page */
+
+.loading-page {
+  background: linear-gradient(to right, #e94560c7, #543483d3);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 ul {
   margin-bottom: 0;
 }

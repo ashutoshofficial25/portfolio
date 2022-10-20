@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import "./style.css";
 import "slick-carousel/slick/slick.css";
@@ -10,18 +10,30 @@ import Footer from "./components/Footer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ThankyouPage from "./pages/thankyouPage";
 import ErrorPage from "./pages/404";
+import LoadingPage from "./pages/LoadingPage";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>
-        <TopNav />
+        {!loading && <TopNav />}
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
+          <Route
+            exact
+            path="/"
+            element={loading ? <LoadingPage /> : <Homepage />}
+          />
           <Route path="/thankyou" element={<ThankyouPage />} />
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
-        <Footer />
+        {!loading && <Footer />}
       </BrowserRouter>
     </div>
   );
