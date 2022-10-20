@@ -491,7 +491,7 @@ button a {
   letter-spacing: 2px;
   font-size: 18px;
   min-height: 100px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   background: linear-gradient(to right, #533483, #e94560);
