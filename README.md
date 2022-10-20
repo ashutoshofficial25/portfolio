@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Preview 
+### Preview  [See Live! ](https://ashutosh-maurya.netlify.app/).
 
 ![alt text](https://github.com/ashutoshofficial25/portfolio/blob/master/src/assets/showcase.png)
 
