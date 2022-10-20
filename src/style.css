@@ -475,10 +475,10 @@ button a {
   width: auto;
   /* transition: ease-in-out 500ms; */
 }
-.social-icon:hover {
+/* .social-icon:hover {
   transition-delay: 100ms;
   transform: scaleY(1.2);
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .address {

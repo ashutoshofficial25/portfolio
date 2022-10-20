@@ -3,6 +3,7 @@ import React, { useState } from "react";
 //Packages Import
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 //assets Import
 import instaIcon from "../assets/socials/insta.png";
@@ -66,39 +67,70 @@ const ContactUs = () => {
             </p>
 
             <div className="social-links p-3">
-              <a href="https://github.com/ashutoshofficial25/" target="_blank">
-                <img src={gitIcon} className="social-icon git" alt="git" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ashutosh-maurya-a996931a5"
-                target="_blank"
+              <motion.div
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                <img
-                  src={linkedInIcon}
-                  className="social-icon linkedin"
-                  alt="linkedIn"
-                />
-              </a>
-              <a
-                href="https://twitter.com/Ashutos80172936?t=imEBNXgLafp3oT7i864dEg&s=09"
-                target="_blank"
+                <a
+                  href="https://github.com/ashutoshofficial25/"
+                  target="_blank"
+                >
+                  <img src={gitIcon} className="social-icon git" alt="git" />
+                </a>
+              </motion.div>
+
+              <motion.div
+                className="box"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                <img
-                  src={twitterIcon}
-                  className="social-icon twitter"
-                  alt="twitter"
-                />
-              </a>
-              <a
-                href="https://www.instagram.com/ashutosh_official_25/?hl=en"
-                target="_blank"
+                <a
+                  href="https://www.linkedin.com/in/ashutosh-maurya-a996931a5"
+                  target="_blank"
+                >
+                  <img
+                    src={linkedInIcon}
+                    className="social-icon linkedin"
+                    alt="linkedIn"
+                  />
+                </a>
+              </motion.div>
+              <motion.div
+                className="box"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                <img
-                  src={instaIcon}
-                  className="social-icon insta"
-                  alt="insta"
-                />
-              </a>
+                <a
+                  href="https://twitter.com/Ashutos80172936?t=imEBNXgLafp3oT7i864dEg&s=09"
+                  target="_blank"
+                >
+                  <img
+                    src={twitterIcon}
+                    className="social-icon twitter"
+                    alt="twitter"
+                  />
+                </a>
+              </motion.div>
+              <motion.div
+                className="box"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              >
+                <a
+                  href="https://www.instagram.com/ashutosh_official_25/?hl=en"
+                  target="_blank"
+                >
+                  <img
+                    src={instaIcon}
+                    className="social-icon insta"
+                    alt="insta"
+                  />
+                </a>
+              </motion.div>
             </div>
           </Col>
           <Col md={{ span: 5, offset: 2 }} className="p-5">
