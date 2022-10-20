@@ -4,6 +4,7 @@ import React from "react";
 import heroImg from "../assets/hero-image.svg";
 import downloadIcon from "../assets/direct-download.png";
 import resume from "../assets/Resume/Resume-Ashutosh-Maurya.pdf";
+import CustonButton from "./CustonButton";
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
               I'd love to hear from you!
             </p>
             <div className="hero-btn-group">
-              <button className="hero-btn resume">
+              <CustonButton className="hero-btn resume">
                 <a href={resume} download>
                   <img
                     className="download-icon"
@@ -29,12 +30,11 @@ const Hero = () => {
                   />{" "}
                   &nbsp; My CV
                 </a>
-              </button>
+              </CustonButton>
 
-              <button className="hero-btn wrk-btn">
-                {" "}
+              <CustonButton className="hero-btn wrk-btn">
                 <a href="#projects"> View my work</a>
-              </button>
+              </CustonButton>
             </div>
           </div>
 
