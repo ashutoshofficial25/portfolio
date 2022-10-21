@@ -75,6 +75,7 @@ const ContactUs = () => {
                 <a
                   href="https://github.com/ashutoshofficial25/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img src={gitIcon} className="social-icon git" alt="git" />
                 </a>
@@ -89,6 +90,7 @@ const ContactUs = () => {
                 <a
                   href="https://www.linkedin.com/in/ashutosh-maurya-a996931a5"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src={linkedInIcon}
@@ -106,6 +108,7 @@ const ContactUs = () => {
                 <a
                   href="https://twitter.com/Ashutos80172936?t=imEBNXgLafp3oT7i864dEg&s=09"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src={twitterIcon}
@@ -123,6 +126,7 @@ const ContactUs = () => {
                 <a
                   href="https://www.instagram.com/ashutosh_official_25/?hl=en"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src={instaIcon}

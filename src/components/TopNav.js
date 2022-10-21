@@ -52,6 +52,7 @@ const TopNav = () => {
             className={colorChange ? "" : "nav-option"}
             onClick={handleShow}
             src={naviIcon}
+            alt="nav-bar-line"
           />
 
           <Offcanvas
