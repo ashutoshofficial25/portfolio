@@ -49,7 +49,6 @@ const LoadingPage = () => {
   return (
     <div>
       <div className="loading-page">
-        <p className="h2 text-white"> Welocme to my Portfolio</p>
         <motion.div
           style={loadingContainer}
           variants={loadingContainerVariants}
