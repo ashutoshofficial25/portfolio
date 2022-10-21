@@ -32,19 +32,19 @@ const TopNav = () => {
         <img className="logo" src={logo} alt="logo-img" />
         <ul className="nav-list">
           <li className="nav-item">
-            <a href="#home"> Home</a>
+            <NavLink href="#home"> Home</NavLink>
           </li>
           <li className="nav-item">
-            <a href="#services"> Services</a>
+            <NavLink href="#services"> Services</NavLink>
           </li>
           <li className="nav-item">
-            <a href="#about-me">About me</a>
+            <NavLink href="#about-me">About me</NavLink>
           </li>
           <li className="nav-item">
-            <a href="#projects">Projects</a>
+            <NavLink href="#projects">Projects</NavLink>
           </li>
           <li className="nav-item">
-            <a href="#contact-me">Contact me</a>
+            <NavLink href="#contact-me">Contact me</NavLink>
           </li>
         </ul>
         <div className="nav-option-icon">
@@ -64,20 +64,20 @@ const TopNav = () => {
             <Offcanvas.Body className="d-flex align-items-center">
               <ul className="nav-list-hidden">
                 <li className="nav-item">
-                  <NavLink href="#home"> Home</NavLink>
+                  <a href="#home"> Home</a>
                 </li>
-                <NavLink className="nav-item">
-                  <a href="#services"> Services</a>
-                </NavLink>
-                <NavLink className="nav-item">
-                  <a href="#about-me">About me</a>
-                </NavLink>
-                <NavLink className="nav-item">
-                  <a href="#projects">Projects</a>
-                </NavLink>
-                <NavLink className="nav-item">
-                  <a href="#contact-me">Contact me</a>
-                </NavLink>
+                <li className="nav-item">
+                  <NavLink href="#services"> Services</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink href="#about-me">About me</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink href="#projects">Projects</NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink href="#contact-me">Contact me</NavLink>
+                </li>
               </ul>
             </Offcanvas.Body>
           </Offcanvas>
