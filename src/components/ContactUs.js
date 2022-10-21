@@ -84,7 +84,7 @@ const ContactUs = () => {
                 className="box"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                transition={{ type: "tween", stiffness: 400, damping: 17 }}
               >
                 <a
                   href="https://www.linkedin.com/in/ashutosh-maurya-a996931a5"
@@ -101,7 +101,7 @@ const ContactUs = () => {
                 className="box"
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                transition={{ type: "tween", stiffness: 400, damping: 17 }}
               >
                 <a
                   href="https://twitter.com/Ashutos80172936?t=imEBNXgLafp3oT7i864dEg&s=09"
@@ -116,9 +116,9 @@ const ContactUs = () => {
               </motion.div>
               <motion.div
                 className="box"
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 0.9 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                whileHover={{ scale: 1.3 }}
+                whileTap={{ scale: 0.8 }}
+                transition={{ type: "tween", stiffness: 400, damping: 17 }}
               >
                 <a
                   href="https://www.instagram.com/ashutosh_official_25/?hl=en"
