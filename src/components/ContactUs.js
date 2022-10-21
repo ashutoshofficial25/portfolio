@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //Packages Import
-import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Button, Col, Container, Form, NavLink, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -41,13 +41,13 @@ const ContactUs = () => {
 
             <p>
               {" "}
-              <a
+              <NavLink
                 href="https://ashutosh-maurya.netlify.app/"
                 className="site-link"
               >
                 {" "}
                 ashutosh-maurya.netlify.app
-              </a>
+              </NavLink>
               <br />
               Indira-Nagar Lucknow,
               <br />

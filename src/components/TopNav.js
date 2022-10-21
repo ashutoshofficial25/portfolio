@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 //Package Import
-import { Offcanvas } from "react-bootstrap";
+import { NavLink, Offcanvas } from "react-bootstrap";
 
 //Assets Import
 import logo from "../logo.png";
@@ -64,20 +64,20 @@ const TopNav = () => {
             <Offcanvas.Body className="d-flex align-items-center">
               <ul className="nav-list-hidden">
                 <li className="nav-item">
-                  <a href="#home"> Home</a>
+                  <NavLink href="#home"> Home</NavLink>
                 </li>
-                <li className="nav-item">
+                <NavLink className="nav-item">
                   <a href="#services"> Services</a>
-                </li>
-                <li className="nav-item">
+                </NavLink>
+                <NavLink className="nav-item">
                   <a href="#about-me">About me</a>
-                </li>
-                <li className="nav-item">
+                </NavLink>
+                <NavLink className="nav-item">
                   <a href="#projects">Projects</a>
-                </li>
-                <li className="nav-item">
+                </NavLink>
+                <NavLink className="nav-item">
                   <a href="#contact-me">Contact me</a>
-                </li>
+                </NavLink>
               </ul>
             </Offcanvas.Body>
           </Offcanvas>
