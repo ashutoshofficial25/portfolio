@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ThankyouPage from "./pages/thankyouPage";
 import ErrorPage from "./pages/404";
 import LoadingPage from "./pages/LoadingPage";
+import LolPage from "./pages/LolPage";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
             element={loading ? <LoadingPage /> : <Homepage />}
           />
           <Route path="/thankyou" element={<ThankyouPage />} />
+          <Route path="/LOL" element={<LolPage />} />
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
         {!loading && <Footer />}
