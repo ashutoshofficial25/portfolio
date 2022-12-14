@@ -2,13 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "dm sans", Sans-serif;
 }
 /* Primary Colors
  */
 
 /* Loading Page */
 
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins-Regular.ttf");
+}
+body {
+  font-family: "Poppins";
+  font-weight: 600;
+}
 .loading-page {
   background: linear-gradient(to right, #e94560c7, #543483d3);
   height: 100vh;
@@ -127,7 +134,6 @@ li a:visited {
 
 .hero-text {
   color: #eeeeee;
-  font-family: "dm sans", Sans-serif;
 }
 .hero-title {
   font-size: 3.6rem;
@@ -269,7 +275,7 @@ button a {
 .tool-test {
   padding: 0.5rem;
   font-size: 1.6rem;
-  font-family: "Varela Round", sans-serif;
+
   font-weight: 600;
 }
 
@@ -311,7 +317,7 @@ button a {
   padding: 3rem;
   margin-bottom: 2rem;
   font-size: 1.8rem;
-  font-family: "Varela Round", sans-serif;
+
   font-weight: 600;
   line-height: 0.9;
 }
@@ -366,13 +372,13 @@ button a {
 .card-head {
   padding: 1.6rem;
   font-size: 1rem;
-  font-family: "Varela Round", sans-serif;
+
   font-weight: 600;
 }
 .card-text {
   font-size: 1rem;
   text-align: center;
-  font-family: "Varela Round", sans-serif;
+
   font-weight: 500;
 }
 .card-btn {
@@ -406,7 +412,7 @@ button a {
 
 .about-me-head {
   font-size: 1.6rem;
-  font-family: "Varela Round", sans-serif;
+
   padding-bottom: 50px;
   font-weight: 500;
 }
@@ -433,7 +439,7 @@ button a {
   display: flex;
   align-items: center;
   padding: 10px;
-  font-family: "dm sans", Sans-serif;
+
   letter-spacing: 0.5px;
   line-height: 1.5;
   font-size: 18px;
