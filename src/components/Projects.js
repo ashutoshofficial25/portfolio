@@ -60,7 +60,7 @@ const Projects = () => {
               <h4 className="projectTitle text-light text-center">
                 Paytm-Web Page <span>(Clone)</span>
               </h4>
-              <a href="https://inshorts-news.netlify.app/" target="_blank">
+              <a href="https://paytm-cl.netlify.app/" target="_blank">
                 <div className="cardProject">
                   <img src={paytmWebPage} className="d-block w-100" alt="..." />
                 </div>
