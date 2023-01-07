@@ -30,7 +30,8 @@ ul {
 }
 
 .hero-section {
-  background:linear-gradient(45deg, rgb(15, 15, 15), transparent), url('./assets/hero-bg.png');
+  background: linear-gradient(45deg, #33323292, transparent),
+    url("./assets/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -305,7 +306,8 @@ button a {
 /* Service- Section */
 
 .our-services {
-  background:linear-gradient(-45deg, rgb(15, 15, 15), transparent), url("./assets/service-bg.png");
+  background: linear-gradient(-45deg, #33323292, transparent),
+    url("./assets/service-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -399,7 +401,8 @@ button a {
 }
 
 .about-me-container {
-  background:linear-gradient(125deg, rgb(15, 15, 15), transparent), url("./assets/aboutme-bg.png");
+  background: linear-gradient(125deg, #33323292, transparent),
+    url("./assets/aboutme-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -462,7 +465,8 @@ button a {
 }
 
 .contact-container {
-  background:linear-gradient(-45deg, rgb(15, 15, 15), transparent), url("./assets/contactus-bg.png");
+  background: linear-gradient(-45deg, #33323292, transparent),
+    url("./assets/contactus-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -11,6 +11,7 @@ import todoApp from "../assets/projects/todo-app.png";
 import iconfinder from "../assets/projects/iconfinder.png";
 import inshortsNews from "../assets/projects/inshots-news.png";
 import paytmWebPage from "../assets/projects/paytm-clone.png";
+import myntra from "../assets/projects/myntra.png";
 
 const Projects = () => {
   //to make dynamic
@@ -29,6 +30,19 @@ const Projects = () => {
         <h1 className="text-center text-light p-3">Project Gallery </h1>
 
         <Row className="justify-content-center p-5">
+          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+            <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
+              <h4 className="projectTitle text-light text-center">
+                Myntra <span>(Coming soon...)</span>
+              </h4>
+              <a href="https://myntra-ecommerce.vercel.app/" target="_blank">
+                <div className="cardProject">
+                  <img src={myntra} className="d-block w-100" alt="..." />
+                </div>
+              </a>
+            </motion.span>
+          </Col>
+
           <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
