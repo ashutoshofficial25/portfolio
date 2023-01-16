@@ -35,7 +35,10 @@ const Projects = () => {
               <h4 className="projectTitle text-light text-center">
                 Click & Collect <span>(Coming soon...)</span>
               </h4>
-              <a href="https://myntra-ecommerce.vercel.app/" target="_blank">
+              <a
+                href="https://click-n-collect-ecommerce.vercel.app/"
+                target="_blank"
+              >
                 <div className="cardProject">
                   <img
                     src={myntra}
