@@ -33,11 +33,15 @@ const Projects = () => {
           <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
-                Myntra <span>(Coming soon...)</span>
+                Click & Collect <span>(Coming soon...)</span>
               </h4>
               <a href="https://myntra-ecommerce.vercel.app/" target="_blank">
                 <div className="cardProject">
-                  <img src={myntra} className="d-block w-100" alt="..." />
+                  <img
+                    src={myntra}
+                    className="d-block w-100"
+                    alt="click & collect"
+                  />
                 </div>
               </a>
             </motion.span>
