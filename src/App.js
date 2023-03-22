@@ -19,7 +19,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Aos.init();
+    Aos.init({ debounceDelay: 1000 });
     Aos.refresh();
   }, []);
 

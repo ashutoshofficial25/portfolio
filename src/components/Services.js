@@ -8,7 +8,7 @@ import design from "../assets/services/service-2.svg";
 import responsive from "../assets/services/service-3.svg";
 const Services = () => {
   return (
-    <div id="services" className="our-services">
+    <div data-aos="fade-up" id="services" className="our-services">
       <div className="service-head">
         <p>Our Services</p>
       </div>

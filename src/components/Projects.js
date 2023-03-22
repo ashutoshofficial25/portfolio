@@ -32,7 +32,15 @@ const Projects = () => {
         <h1 className="text-center text-light p-3">Project Gallery </h1>
 
         <Row className="justify-content-center p-5">
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 Click & Collect <span>(Coming soon...)</span>
@@ -52,7 +60,15 @@ const Projects = () => {
             </motion.span>
           </Col>
 
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 IconFinder <span>(Clone)</span>
@@ -65,7 +81,15 @@ const Projects = () => {
             </motion.span>
           </Col>
 
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 Inshorts-news <span>(Clone)</span>
@@ -78,7 +102,15 @@ const Projects = () => {
             </motion.span>
           </Col>
 
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 Paytm-Web Page <span>(Clone)</span>
@@ -91,7 +123,15 @@ const Projects = () => {
             </motion.span>
           </Col>
 
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 Blogging Web App
@@ -104,7 +144,15 @@ const Projects = () => {
             </motion.span>
           </Col>
 
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 Weather App
@@ -117,7 +165,15 @@ const Projects = () => {
             </motion.span>
           </Col>
 
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 Visit new location <span>(Natours-clone)</span>
@@ -134,7 +190,15 @@ const Projects = () => {
             </motion.span>
           </Col>
 
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+          <Col
+            data-aos="fade-up"
+            lg={4}
+            xl={4}
+            md={6}
+            sm={6}
+            xs={12}
+            className="project-col  p-3"
+          >
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
                 Todo-App <span>(Next-js)</span>
