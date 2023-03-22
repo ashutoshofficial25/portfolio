@@ -12,6 +12,8 @@ import iconfinder from "../assets/projects/iconfinder.png";
 import inshortsNews from "../assets/projects/inshots-news.png";
 import paytmWebPage from "../assets/projects/paytm-clone.png";
 import myntra from "../assets/projects/myntra.png";
+import blogging from "../assets/projects/blog.png";
+import weather from "../assets/projects/weather-app.png";
 
 const Projects = () => {
   //to make dynamic
@@ -92,6 +94,32 @@ const Projects = () => {
           <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
             <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
               <h4 className="projectTitle text-light text-center">
+                Blogging Web App
+              </h4>
+              <a href="https://blogging-hub.vercel.app/" target="_blank">
+                <div className="cardProject">
+                  <img src={blogging} className="d-block w-100" alt="..." />
+                </div>
+              </a>
+            </motion.span>
+          </Col>
+
+          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+            <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
+              <h4 className="projectTitle text-light text-center">
+                Weather App
+              </h4>
+              <a href="https://mausam-jankari.vercel.app/" target="_blank">
+                <div className="cardProject">
+                  <img src={weather} className="d-block w-100" alt="..." />
+                </div>
+              </a>
+            </motion.span>
+          </Col>
+
+          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
+            <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
+              <h4 className="projectTitle text-light text-center">
                 Visit new location <span>(Natours-clone)</span>
               </h4>
               <a href="https://visitnewlocation.netlify.app/" target="_blank">
@@ -116,19 +144,6 @@ const Projects = () => {
                   <img src={todoApp} className="d-block w-100" alt="..." />
                 </div>
               </a>
-            </motion.span>
-          </Col>
-
-          <Col lg={4} xl={4} md={6} sm={6} xs={12} className="project-col  p-3">
-            <motion.span whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}>
-              <h4 className="projectTitle text-light text-center">
-                Easy India <span>1st page</span>
-              </h4>
-              <a href="https://esty-india.netlify.app/" target="_blank">
-                <div className="cardProject">
-                  <img src={estyIndia} className="d-block w-100" alt="..." />
-                </div>
-              </a>{" "}
             </motion.span>
           </Col>
         </Row>

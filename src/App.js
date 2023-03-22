@@ -12,13 +12,21 @@ import ThankyouPage from "./pages/thankyouPage";
 import ErrorPage from "./pages/404";
 import LoadingPage from "./pages/LoadingPage";
 import LolPage from "./pages/LolPage";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    Aos.init();
+    Aos.refresh();
+  }, []);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (

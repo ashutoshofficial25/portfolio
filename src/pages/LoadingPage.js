@@ -42,7 +42,7 @@ const LoadingPage = () => {
     },
   };
   const loadingCircleTransition = {
-    duration: 0.8,
+    duration: 0.1,
     yoyo: Infinity,
     ease: "easeInOut",
   };

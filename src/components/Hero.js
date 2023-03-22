@@ -11,7 +11,7 @@ const Hero = () => {
     <div id="home" className="main-container">
       <div className="hero-section">
         <div id="hero" className="hero">
-          <div className="hero-text">
+          <div data-aos="fade-right" className="hero-text">
             <h2 className="hero-title">I’m a creative web developer </h2>
             <p> </p>
             <p className="hero-description">
@@ -38,7 +38,9 @@ const Hero = () => {
             </div>
           </div>
 
-          <img src={heroImg} alt="hero-img" className="hero-img" />
+          <div data-aos="fade-left">
+            <img src={heroImg} alt="hero-img" className="hero-img" />
+          </div>
         </div>
       </div>
     </div>
